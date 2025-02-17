@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        // Fetch and inject the content
+        fetch('client-framework.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('content').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+                document.getElementById('content').innerHTML = 'Error loading content. Please try again.';
+            });
+    </script>
+</body>
+</html>

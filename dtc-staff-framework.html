@@ -1,0 +1,1392 @@
+<!-- ================== BEGIN ACCORDION ================== -->
+<div class="top-level-accordion">
+
+  <!-- 
+    Three radio inputs for top-level sections:
+      - Documentation
+      - Video Tutorials
+      - Courses
+    Only one can be checked at a time because they share name="topSection".
+  -->
+
+  <!-- 1) DOCUMENTATION -->
+  <input type="radio" id="docsRadio" name="topSection" checked />
+  <label for="docsRadio" class="resource-card">
+    <div class="resource-header">
+      <!-- Big doc icon -->
+      <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12h6m-6 4h6m2 5H7
+                 a2 2 0 01-2-2V5
+                 a2 2 0 012-2h5.586
+                 a1 1 0 01.707.293l5.414 5.414
+                 a1 1 0 01.293.707V19
+                 a2 2 0 01-2 2z"/>
+      </svg>
+      <h3 class="resource-title">Documentation</h3>
+    </div>
+  </label>
+
+  <!-- 2) VIDEO TUTORIALS -->
+  <input type="radio" id="videosRadio" name="topSection" />
+  <label for="videosRadio" class="resource-card">
+    <div class="resource-header">
+      <!-- Big video icon -->
+      <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 10l4.553-2.276
+                 A1 1 0 0121 8.618v6.764
+                 a1 1 0 01-1.447.894L15 14
+                 M5 18h8a2 2 0 002-2V8
+                 a2 2 0 00-2-2H5
+                 a2 2 0 00-2 2v8
+                 a2 2 0 002 2z"/>
+      </svg>
+      <h3 class="resource-title">Video Tutorials</h3>
+    </div>
+  </label>
+
+  <!-- 3) COURSES -->
+  <input type="radio" id="coursesRadio" name="topSection" />
+  <label for="coursesRadio" class="resource-card">
+    <div class="resource-header">
+      <!-- Big courses icon -->
+      <svg class="resource-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13
+                 C10.832 5.477 9.246 5 7.5 5
+                 S4.168 5.477 3 6.253v13
+                 C4.168 18.477 5.754 18 7.5 18
+                 s3.332.477 4.5 1.253
+                 m0-13C13.168 5.477 14.754 5 16.5 5
+                 c1.747 0 3.332.477 4.5 1.253v13
+                 C19.832 18.477 18.247 18 16.5 18
+                 c-1.746 0-3.332.477-4.5 1.253"/>
+      </svg>
+      <h3 class="resource-title">Courses</h3>
+    </div>
+  </label>
+
+
+  <!-- ================== DOCUMENTATION PANEL ================== -->
+  <div class="panel" id="docsPanel">
+
+    <!-- ================== CAC (Citizen Action Center) DOCS (with 1 sub-category as example) ================== -->
+    <details>
+      <summary style="margin-left: 1rem;">CAC (Citizen Action Center)</summary>
+      <div class="resource-list" style="margin-left: 1.5rem;">
+        <!-- Only one actual CAC (Citizen Action Center) doc, so we grouped it under "General" -->
+        <details style="margin-left: 1rem;">
+          <summary>General</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=38" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Overview Quick Reference Guide (PDF)
+            </a>
+          </div>
+        </details>
+      </div>
+    </details>
+
+
+    <!-- ================== DBS (Diversified Billing System) DOCS (with multiple sub-categories, all items) ================== -->
+    <details>
+      <summary style="margin-left: 1rem;">DBS (Diversified Billing System)</summary>
+      <div class="resource-list" style="margin-left: 1.5rem;">
+
+        <!-- 1) ACH -->
+        <details style="margin-left: 1rem;">
+          <summary>ACH</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=78" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              ACH from Start to Finish (DOCX)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=79" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              ACH from Start to Finish (PDF)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 2) Adjustments & Interest -->
+        <details style="margin-left: 1rem;">
+          <summary>Adjustments &amp; Interest</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=70" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Adjustment Processing (DOC)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=101" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Adjustment and Interest - Interest Processing (DOCX)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 3) Billing -->
+        <details style="margin-left: 1rem;">
+          <summary>Billing</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=34" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Bill Maintenance (PDF)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=90" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Billing Exceptions Report - Billing Process with Exceptions (DOCX)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 4) Customer Maintenance -->
+        <details style="margin-left: 1rem;">
+          <summary>Customer Maintenance</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=100" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Customer Maintenance (training doc.) (DOCX)
+            </a>
+          </div>
+        </details>
+
+        <!-- 5) Notices -->
+        <details style="margin-left: 1rem;">
+          <summary>Notices</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=64" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Notice Processing (DOC)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 6) Other -->
+        <details style="margin-left: 1rem;">
+          <summary>Other</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=293" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Level 1 Quick Reference Guide (PDF)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=244" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Overview Quick Reference Guide (PDF)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/lesson/view.php?id=2" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Status Codes (Lesson)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=4" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Transaction Codes (PDF)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 7) Payment Processing -->
+        <details style="margin-left: 1rem;">
+          <summary>Payment Processing</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=146" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              How to Process Billing Payments (DOCX)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=57" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              How to Process Utility Billing Payments (PDF)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=58" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Reverse Payment Processing (PDF)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=71" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Reverse Payment Processing (Alternate PDF)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 8) Reports & Reconciliation -->
+        <details style="margin-left: 1rem;">
+          <summary>Reports &amp; Reconciliation</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=92" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              AR Past Due Reports (DOC)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=93" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              AR Reconciliation Report (DOC)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=87" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              AR Trial Balance Reports (DOC)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=88" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              AR Trial Balance Reports (PDF)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=96" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Customer Reports (training doc.) (DOCX)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=98" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Customer Reports (step action table) (PDF)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=95" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Processing Reports (training doc.) (DOCX)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=97" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Processing Reports (step action table) (PDF)
+            </a>
+
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+
+    <!-- ================== OTHER RESOURCES (DOC-LIKE) with sub-categories ================== -->
+    <details>
+      <summary style="margin-left: 1rem;">Other Resources</summary>
+      <div class="resource-list" style="margin-left: 1.5rem;">
+
+        <!-- 1) Assessments & Quizzes -->
+        <details style="margin-left: 1rem;">
+          <summary>Assessments &amp; Quizzes</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/quiz/view.php?id=298" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Level 1 Support Certification Quiz
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/scorm/view.php?id=396" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Week 4 Activity Assessment (SCORM)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/scorm/view.php?id=397" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 12h6m-6 4h6m2 5H7
+                         a2 2 0 01-2-2V5
+                         a2 2 0 012-2h5.586
+                         a1 1 0 01.707.293l5.414 5.414
+                         a1 1 0 01.293.707V19
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Week 5 Activity Assessment (SCORM)
+            </a>
+          </div>
+        </details>
+
+        <!-- 2) Folders -->
+        <details style="margin-left: 1rem;">
+          <summary>Folders</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/folder/view.php?id=54" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 7l2 2h14
+                         a2 2 0 012 2v7
+                         a2 2 0 01-2 2H5
+                         a2 2 0 01-2-2V7z"/>
+              </svg>
+              DBS (Diversified Billing System): Billing Payment Overview (Folder)
+            </a>
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+  </div>
+  <!-- ================== /DOCUMENTATION PANEL ================== -->
+
+
+
+  <!-- ================== VIDEO TUTORIALS PANEL ================== -->
+  <div class="panel" id="videosPanel">
+
+    <!-- ================== CAC (Citizen Action Center) VIDEOS, subdivided ================== -->
+    <details>
+      <summary style="margin-left: 1rem;">CAC (Citizen Action Center)</summary>
+      <div class="resource-list" style="margin-left: 1.5rem;">
+
+        <!-- Sub-category 1: Customer Setup & Info -->
+        <details style="margin-left: 1rem;">
+          <summary>Customer Setup &amp; Info</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=41" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Manage Municipality (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=51" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Move In &amp; Move Out (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=43" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Utility Customer (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- Sub-category 2: FAQ & Communications -->
+        <details style="margin-left: 1rem;">
+          <summary>FAQ &amp; Communications</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=47" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Alerts (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=48" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Customer Communications (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=42" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Frequently Asked Questions (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- Sub-category 3: Forms & Documents -->
+        <details style="margin-left: 1rem;">
+          <summary>Forms &amp; Documents</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=49" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Forms &amp; Documents (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- Sub-category 4: Misc -->
+        <details style="margin-left: 1rem;">
+          <summary>Misc</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=39" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Home Screen (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=53" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Resource Rentals (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=40" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Schedule (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- Sub-category 5: Payments -->
+        <details style="margin-left: 1rem;">
+          <summary>Payments</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=45" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              AutoPay (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=50" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              General Payments (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- Sub-category 6: Reports -->
+        <details style="margin-left: 1rem;">
+          <summary>Reports</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=46" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Processor Reports (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=52" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Registration Reports (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=44" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Transaction Report (MP4)
+            </a>
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+
+    <!-- ================== DBS (Diversified Billing System) VIDEOS, subdivided ================== -->
+    <details>
+      <summary style="margin-left: 1rem;">DBS (Diversified Billing System)</summary>
+      <div class="resource-list" style="margin-left: 1.5rem;">
+
+        <!-- 1) ACH -->
+        <details style="margin-left: 1rem;">
+          <summary>ACH</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=81" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              ACH Prenote &amp; Final Checkboxes (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=80" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              ACH Processing/Setup the Client for ACH (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=82" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Adding a Customer to the ACH File (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=85" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Change a Customer Amount in the ACH Prior Submitting (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=84" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              How to Edit the ACH File to Balance Differences (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=86" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 01-2 2z"/>
+              </svg>
+              Making a Customer Inactive from the ACH File (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=83" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Understanding the Contents of the ACH File (MP4)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 2) Adjustments & Reverse Payments -->
+        <details style="margin-left: 1rem;">
+          <summary>Adjustments &amp; Reverse Payments</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=72" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Adjustments &amp; Reverse Payments (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=147" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Adjustments Overview (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- 3) Billing & Payment -->
+        <details style="margin-left: 1rem;">
+          <summary>Billing &amp; Payment</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=74" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Bill Processing (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=91" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Billing Exception Reports Training (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=55" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Billing Payment Process (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=56" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Billing Processing (Cash Payment) (MP4)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 4) Final Direct Billing -->
+        <details style="margin-left: 1rem;">
+          <summary>Final Direct Billing</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=77" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Final Direct Billing - Bill Print &amp; Updating (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=76" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Final Direct Billing - Calculating Bills (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=75" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Final Direct Billing - Final Bill Job Setup (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=74" class="resource-link">
+              <!-- Note: same ID 74 also used above; presumably a different resource? -->
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Final Direct Billing (MP4)
+            </a>
+
+          </div>
+        </details>
+
+        <!-- 5) Interest & Penalty -->
+        <details style="margin-left: 1rem;">
+          <summary>Interest &amp; Penalty</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=63" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Interest Setup (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=60" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Penalty Management (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- 6) Notices -->
+        <details style="margin-left: 1rem;">
+          <summary>Notices</summary>
+          <div class="resource-list">
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=66" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Notice Processing - Notice Exceptions (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=68" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Notice Processing - Notice Print (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=67" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Notice Processing - Notice Register (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=65" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Notice Processing - Notice Setup (MP4)
+            </a>
+
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=69" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Notice Processing - Notice Update &amp; Finalizing (MP4)
+            </a>
+          </div>
+        </details>
+
+        <!-- 7) Reports -->
+        <details style="margin-left: 1rem;">
+          <summary>Reports</summary>
+          <div class="resource-list">
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=94" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              AR Reconciliation &amp; Past Due Reports (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=89" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              AR Trial Balance Reports (MP4)
+            </a>
+            <a href="https://learning.diversifiedtechnology.com/mod/resource/view.php?id=99" class="resource-link">
+              <svg class="item-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 10l4.553-2.276
+                         A1 1 0 0121 8.618v6.764
+                         a1 1 0 01-1.447.894L15 14
+                         M5 18h8a2 2 0 002-2V8
+                         a2 2 0 00-2-2H5
+                         a2 2 0 00-2 2v8
+                         a2 2 0 002 2z"/>
+              </svg>
+              Customer &amp; Processing Reports (Full Video) (MP4)
+            </a>
+          </div>
+        </details>
+
+      </div>
+    </details>
+
+  </div>
+  <!-- ================== /VIDEOS PANEL ================== -->
+
+
+
+  <!-- ================== COURSES PANEL ================== -->
+  <div class="panel" id="coursesPanel">
+    <p style="margin: 1rem 0;">
+      <a href="https://learning.diversifiedtechnology.com/my/courses.php"
+         class="go-courses" target="_blank">Go to Courses Page</a>
+    </p>
+  </div>
+
+</div>
+<!-- ================== END ACCORDION ================== -->
+
+
+
+
+<!-- ================== STYLES ================== -->
+<style>
+.top-level-accordion {
+  max-width: 900px;
+  margin: 1rem auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  position: relative;
+  text-align: center; /* center the top "cards" */
+}
+
+/* Hide the radio inputs */
+.top-level-accordion input[type="radio"] {
+  display: none;
+}
+
+/* The three top-level "cards" for docs, videos, courses */
+.resource-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 28%;
+  box-sizing: border-box;
+  margin: 0 1% 1rem 1%;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.75rem;
+  transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.resource-card:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* The container in each card: icon above the text */
+.resource-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.resource-icon {
+  width: 30px;
+  height: 30px;
+  color: #333;
+}
+.resource-title {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Highlight whichever card is "checked" (active) */
+input[type="radio"]:checked + .resource-card {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.3);
+}
+
+/* The hidden panels below the cards */
+.panel {
+  display: none;
+  text-align: left;
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  max-width: 900px;
+  background-color: #fafafa;
+}
+
+/* Show only the relevant panel for each selected radio */
+#docsRadio:checked ~ #docsPanel {
+  display: block;
+}
+#videosRadio:checked ~ #videosPanel {
+  display: block;
+}
+#coursesRadio:checked ~ #coursesPanel {
+  display: block;
+}
+
+/* Sub-accordion with <details> for CAC (Citizen Action Center), DBS (Diversified Billing System), etc. */
+details {
+  margin: 0.75rem 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+}
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+}
+details[open] {
+  background-color: #f7f7f7;
+}
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Resource list with small icons for doc or video */
+.resource-list {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.resource-link {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.2s;
+}
+.resource-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+.item-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* The "Go to Courses Page" link (Courses panel) */
+.go-courses {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.go-courses:hover {
+  background-color: #0056b3;
+}
+</style>
